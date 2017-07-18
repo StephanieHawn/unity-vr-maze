@@ -5,7 +5,9 @@ using UnityEngine;
 public class Door : MonoBehaviour 
 {
     // Create a boolean value called "locked" that can be checked in OnDoorClicked() 
+	bool locked;
     // Create a boolean value called "opening" that can be checked in Update() 
+	bool opening;
 
     void Update() {
         // If the door is opening and it is not fully raised
@@ -22,5 +24,6 @@ public class Door : MonoBehaviour
     public void Unlock()
     {
         // You'll need to set "locked" to false here
+		locked = false;
     }
 }
