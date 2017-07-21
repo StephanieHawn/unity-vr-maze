@@ -24,12 +24,12 @@ public class CameraRotate : MonoBehaviour {
 		//transform.Rotate(0, 0, -180 * Time.deltaTime, Space.World);
 		transform.Rotate(0, 0, -180);
 		Debug.Log ("test");
+	}
 
-		if (rotate)
-		{
-			
-		}
-
+	public void RotateOnStartIcon ()
+	{
+		transform.Rotate(0, -180, 0);
+		Debug.Log ("test-start");
 	}
 
 }

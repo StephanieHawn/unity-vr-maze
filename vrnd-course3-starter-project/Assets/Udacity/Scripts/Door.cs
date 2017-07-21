@@ -16,14 +16,12 @@ public class Door : MonoBehaviour
 	{
 		locked = true;
 		opening = false;
-		lockDoor = GetComponent<AudioSource>();
 	}
 
     void Update() {
 		if (opening == true) {
-			Debug.Log ("update - opening = true");
+			Debug.Log ("update > opening = true");
 			if(transform.position.y < 4.1){transform.Translate (0, 4 * Time.deltaTime, 0, Space.World);}
-
 		}
         // If the door is opening and it is not fully raised
             // Animate the door raising up
@@ -33,7 +31,7 @@ public class Door : MonoBehaviour
         // If the door is clicked and unlocked
 		if (locked == true) {
 			// Set the "opening" boolean to true
-			Debug.Log("if called - one door clicked");
+			Debug.Log("if called > on door clicked");
 			lockDoor.Play ();
 		} else {
 			// Play a sound to indicate the door is locked

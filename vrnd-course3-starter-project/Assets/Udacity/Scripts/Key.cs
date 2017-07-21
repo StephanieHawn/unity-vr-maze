@@ -17,13 +17,11 @@ public class Key : MonoBehaviour
 
 	public void OnKeyClicked()
 	{
-		// Instatiate the KeyPoof Prefab where this key is located
-		// Make sure the poof animates vertically
-		GameObject poofInstance = (GameObject)Object.Instantiate (keyPoof);
-        
+		// Instatiate the KeyPoof Prefab where this key is located. Make sure the poof animates vertically
+		GameObject poofInstance = (GameObject)Object.Instantiate(keyPoof);
+		//GameObject poofInstance = (GameObject)Object.Instantiate(keyPoof, gameObject.transform.position, keyPoof,transform.rotation);
         // Call the Unlock() method on the Doorå
 		doorPre.GetComponent<Door> ().Unlock ();
-
         // Set the Key Collected Variable to true
 		keyCollected = true;
         // Destroy the key. Check the Unity documentation on how to use Destroy
