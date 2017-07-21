@@ -7,6 +7,11 @@ public class CameraRotate : MonoBehaviour {
 	public float speed = 10f;
 	public bool rotate = false;
 
+	void Start ()
+	{
+		//maybe add in start function to rotate camera facing the maze when it starts
+	}
+
 	void Update ()
 	{
 		//transform.Rotate(Vector3.up, speed * Time.deltaTime);
