@@ -11,15 +11,14 @@ public class Key : MonoBehaviour
 
 	void Update()
 	{
-		//Not required, but for fun why not try adding a Key Floating Animation here :)
-		transform.Rotate( 0, Time.deltaTime, 0);
+		transform.Rotate( 0, 0, 90 * Time.deltaTime);
 	}
 
 	public void OnKeyClicked()
 	{
 		// Instatiate the KeyPoof Prefab where this key is located. Make sure the poof animates vertically
-		GameObject poofInstance = (GameObject)Object.Instantiate(keyPoof);
-		//GameObject poofInstance = (GameObject)Object.Instantiate(keyPoof, gameObject.transform.position, keyPoof,transform.rotation);
+		//GameObject poofInstance = (GameObject)Object.Instantiate(keyPoof);
+		GameObject poofInstance = (GameObject)Object.Instantiate(keyPoof, gameObject.transform.position, keyPoof.transform.rotation);
         // Call the Unlock() method on the Doorå
 		doorPre.GetComponent<Door> ().Unlock ();
         // Set the Key Collected Variable to true

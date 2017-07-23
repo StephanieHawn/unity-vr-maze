@@ -5,11 +5,11 @@ using UnityEngine;
 public class CameraRotate : MonoBehaviour {
 
 	public float speed = 10f;
-	public bool rotate = false;
+	public Vector3 origPosition;
 
 	void Start ()
 	{
-		//maybe add in start function to rotate camera facing the maze when it starts
+		origPosition = gameObject.transform.position;
 	}
 
 	void Update ()
@@ -22,7 +22,7 @@ public class CameraRotate : MonoBehaviour {
 	{
 		// ...also rotate around the World's Y axis
 		//transform.Rotate(0, 0, -180 * Time.deltaTime, Space.World);
-		transform.Rotate(0, 0, -180);
+		transform.Rotate(origPosition.x, origPosition.y, -180);
 		Debug.Log ("test");
 	}
 
