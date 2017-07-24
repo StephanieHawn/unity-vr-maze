@@ -21,11 +21,13 @@ Controls:
 ### GVR Unity SDK Version
 1.50.0
 
+## Goals
+Unity mobile app project for Udacity's VRND course. My assignment was to build a VR application using Unity and the Google VR SDK where the user explores a maze environment to demonstrate working knowledge of 2D and 3D UI, waypoint based navigation, procedural animation, interactive objects, spatial audio, particle effects and persistent storage of session data.
+
 ![Windows 95 VR Maze](/screenshots/2.lego.png?raw=true "Windows 95 VR Maze-02")
 
 ![Windows 95 VR Maze](/screenshots/3.walls.png?raw=true "Windows 95 VR Maze-03")
 
 ![Windows 95 VR Maze](/screenshots/4.smile.png?raw=true "Windows 95 VR Maze-04")
 
-## Goals
-Unity mobile app project for Udacity's VRND course. My assignment was to build a VR application using Unity and the Google VR SDK where the user explores a maze environment to demonstrate working knowledge of 2D and 3D UI, waypoint based navigation, procedural animation, interactive objects, spatial audio, particle effects and persistent storage of session data.
+
