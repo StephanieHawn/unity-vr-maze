@@ -27,5 +27,5 @@ Controls:
 
 ![Windows 95 VR Maze](/screenshots/4.smile.png?raw=true "Windows 95 VR Maze-04")
 
-### What is that?
+### Why?
 Unity mobile app project for Udacity's VRND course.
