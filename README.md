@@ -27,5 +27,5 @@ Controls:
 
 ![Windows 95 VR Maze](/screenshots/4.smile.png?raw=true "Windows 95 VR Maze-04")
 
-### Why?
-Unity mobile app project for Udacity's VRND course.
+## Goals
+Unity mobile app project for Udacity's VRND course. My assignment was to build a VR application using Unity and the Google VR SDK where the user explores a maze environment to demonstrate working knowledge of 2D and 3D UI, waypoint based navigation, procedural animation, interactive objects, spatial audio, particle effects and persistent storage of session data.
